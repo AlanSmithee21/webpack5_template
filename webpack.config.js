@@ -2,6 +2,7 @@ const path = require('path')
 const outputPath = path.resolve(__dirname, './dist')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -30,5 +31,6 @@ module.exports = {
             inject: 'body',
             template: './src/index.html'
         }),
+        new CleanWebpackPlugin(),
     ]
 }
