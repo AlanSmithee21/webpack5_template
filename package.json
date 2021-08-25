@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "webpack": "^5.51.1"
+  }
 }
