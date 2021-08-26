@@ -22,6 +22,13 @@ module.exports = {
                         loader: 'css-loader',
                     }
                 ]
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg|ico|webp)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]'
+                }
             }
         ]
     },
